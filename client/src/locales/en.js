@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +107,10 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No restock orders have been submitted yet.',
+    leadTime: 'Lead Time',
+    leadTimeDays: '{count} days',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -188,6 +193,37 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and review recommended restock quantities based on forecasted demand gaps',
+    budget: 'Restock Budget',
+    budgetMax: 'Maximum: {amount}',
+    recommendations: 'Recommended Purchases',
+    totalSpend: 'Total Spend',
+    remainingBudget: 'Remaining Budget',
+    itemsToOrder: 'Items to Order',
+    leadTime: 'Order Lead Time',
+    days: '{count} days',
+    noRecommendations: 'No items can be restocked within this budget. Increase the budget to see recommendations.',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderPlaced: 'Order {orderNumber} submitted',
+    orderPlacedDetail: 'Total {total}, expected delivery {date}.',
+    viewOrders: 'View in Orders',
+    orderFailed: 'Failed to place order',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      gap: 'Demand Gap',
+      quantity: 'Order Qty',
+      unitCost: 'Unit Cost',
+      cost: 'Cost',
+      leadTime: 'Lead Time',
+      trend: 'Trend'
+    }
+  },
+
   // Filters
   filters: {
     timePeriod: 'Time Period',
@@ -206,7 +242,8 @@ export default {
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
-    adequate: 'Adequate'
+    adequate: 'Adequate',
+    submitted: 'Submitted'
   },
 
   // Trends
